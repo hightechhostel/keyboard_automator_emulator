@@ -9,3 +9,5 @@ A video explanation of this project is located at https://youtu.be/B_2JoDEWHWE
 ./s2s /path/to/text/file/example.md /dev/cu.usbserial-FTGNRR7Z
 
 cu.usbserial-FTGNRR7Z refers to the serial port that has been exposed in your devices directory when the Aruduino is plugged in.  Your port will vary from what's shown above.  
+
+Thanks to my friend Akos for helping with the programming.   
