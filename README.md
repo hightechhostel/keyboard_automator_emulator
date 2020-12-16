@@ -23,9 +23,11 @@ Here's the schematic to hook everything up:
 
 ![Schematic](./images/USB2USB_cable-schematic.png)
 
-To program the Teensy you will need Teensyduino. The normal Arduino IDE will not work.  Plug the the USB A side of the Micro USB cable into your computer and plug the micro USB side into your TeensyLC.  Load the keyboard_automator_emulator.ino into Teensyduino, go to Tools > Board: Arduino Yun > Teensyduino > Teensyduino LC
+To program the Teensy you will need Teensyduino. The normal Arduino IDE will not work.  Plug the the USB A side of the Micro USB cable into your computer and plug the micro USB side into your TeensyLC.  Load the keyboard_automator_emulator.ino in this repository into Teensyduino, go to Tools > Board: Arduino Yun > Teensyduino > Teensyduino LC
 
+![Teensyduino Menu Option](./images/Teensyduino-menu.png)
 
+Click verify 
 itext viewer app that can automatically send lines of text out through the serial port of one computer to an Arduino Teensy to another another computer via USB.  This means you don't have to type long complicated commands if someone has already typed this out for you.   
 
 More documentation to follow (especially upon request). 
