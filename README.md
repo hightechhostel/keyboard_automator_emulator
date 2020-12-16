@@ -37,15 +37,40 @@ Click verify, then Upload.  Teensyduino should prompt you to push the button on 
 If everything worked your hardware is ready to go.  
 
 ####Software
-itext viewer app that can automatically send lines of text out through the serial port of one computer to an Arduino Teensy to another another computer via USB.  This means you don't have to type long complicated commands if someone has already typed this out for you.   
 
-More documentation to follow (especially upon request). 
+Open your terminal and compile your source code with this command: 
 
-A video explanation of this project is located at https://youtu.be/B_2JoDEWHWE
+`gcc s2s.c -o s2s`
 
-## USAGE
-./s2s /path/to/text/file/example.md /dev/cu.usbserial-FTGNRR7Z
+Then run `ls /dev` to see the ports you have active on your computer.  Make note of what you see.  
 
-cu.usbserial-FTGNRR7Z refers to the serial port that has been exposed in your devices directory when the Aruduino is plugged in.  Your port will vary from what's shown above.  
+Plug in the USB to TTL Serial side of your USB to USB convertor cable to your Mac.  
 
-Thanks to my friend Akos for helping with the programming.   
+run `ls /dev` again.  You should see a new port.  Make note of this port.
+
+For example, after connect the ftd232 device to my mac a new tty device appears in the /dev/.
+On my machine it's `/dev/cu.usbserial-FTGNRR7Z` Your's will be different. This is the serial port than you will use use to communicate with the TeensyLC.
+
+Usage
+./s2s text_file serial_port
+
+Example:
+  ./s2s /Users/darrenoverby/MySoftwareBuildInstructions/build.md /dev/cu.usbserial-FTGNRR7Z 
+
+The Text Viewer app will load.  Use the arrow keys to scroll up and down through the lines of text.  If you want to send a command, move your cursor to that row and just hit enter.  
+
+If you want to type something else, just start typing.  Your typed text will be sent to the other machine.  
+
+Here's a cheatsheet of commands: 
+Up / Down keys : Move the cursor Up / Down
+Enter : Sends the current line
+CTRL + j : Sends the JUST the current line without new line character
+CTRL + s : Sends a Super Key press (useful for Linux)
+CTRL + c : Sends a CTRL+c press
+ALT + Arrows : Sends an Arrow key press (useful for navigating the Bash history on the other machine)
+Any other "normal key" : Sends text just like a keyboard
+CTRL + q : Exit 
+
+More documentation available upon request. 
+
+Thanks to my friend Akos Kristo for helping with the programming.   
