@@ -19,6 +19,7 @@ Micro USB Cable - You probably have a few of these laying around but it needs to
 
 A plastic box to put it all in.  
 
+####Hardware
 Here's the schematic to hook everything up: 
 
 ![Schematic](./images/USB2USB_cable-schematic.png)
@@ -27,7 +28,15 @@ To program the Teensy you will need Teensyduino. The normal Arduino IDE will not
 
 ![Teensyduino Menu Option](./images/Teensyduino-menu.png)
 
-Click verify 
+Go to Sketch > Include Library > Keyboard
+
+![Teensyduino Include Library](./images/Include-Keyboard.png)
+
+Click verify, then Upload.  Teensyduino should prompt you to push the button on the TeensyLC.  
+
+If everything worked your hardware is ready to go.  
+
+####Software
 itext viewer app that can automatically send lines of text out through the serial port of one computer to an Arduino Teensy to another another computer via USB.  This means you don't have to type long complicated commands if someone has already typed this out for you.   
 
 More documentation to follow (especially upon request). 
