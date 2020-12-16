@@ -8,6 +8,20 @@ This project consists of two parts.  A USB to USB convertor cable that connects 
 First, let's look at the USB to USB convertor cable.  Here's what mine looks like: 
 
 ![Completed USB to USB convertor cable](./images/USB2USB_cable.jpg)
+
+Here's what you will need to build your cable (affiliate links):  
+
+[USB to TTL Serial 3.3V UART Converter Cable with FTDI Chip!](https://www.amazon.com/gp/product/B06ZYPLFNB/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06ZYPLFNB&linkCode=as2&tag=hightechhoste-20&linkId=fa771f621f446405b7e19dc82cddf165)
+
+[Teensy LC USB Development Board Without Pins](https://www.amazon.com/gp/product/B01BMRTZGE/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01BMRTZGE&linkCode=as2&tag=hightechhoste-20&linkId=f3c548810fa16a25ee8ba9ae16105a44)
+
+Micro USB Cable - You probably have a few of these laying around but it needs to be able to pass data.  Some micro USB cables are only good for charging your devices.   If you can't program your Teensy, then you probably have a bad cable. 
+
+A plastic box to put it all in.  
+
+Here's the schematic to hook everything up: 
+
+
 itext viewer app that can automatically send lines of text out through the serial port of one computer to an Arduino Teensy to another another computer via USB.  This means you don't have to type long complicated commands if someone has already typed this out for you.   
 
 More documentation to follow (especially upon request). 
