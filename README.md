@@ -7,7 +7,7 @@ This project consists of two parts.  A USB to USB convertor cable that connects 
 
 First, let's look at the USB to USB convertor cable.  Here's what mine looks like: 
 
-![Completed USB to USB convertor cable](./images/USB2USB_cable.png)
+![Completed USB to USB convertor cable](./images/USB2USB_cable.jpg)
 itext viewer app that can automatically send lines of text out through the serial port of one computer to an Arduino Teensy to another another computer via USB.  This means you don't have to type long complicated commands if someone has already typed this out for you.   
 
 More documentation to follow (especially upon request). 
